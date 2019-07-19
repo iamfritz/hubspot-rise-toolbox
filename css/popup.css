@@ -1,0 +1,248 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	min-height: 180px;
+	padding: 0;
+	width: 480px;
+	padding-right: 15px;
+}
+
+h1 {
+	font-family: Montserrat,sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0;
+	color: #2f5876;
+
+}
+
+a:link, a:visited {
+	color: #000;
+	outline: 0;
+	text-decoration: none;
+}
+
+img {
+	width: 90px;
+}
+
+.modal-header {
+	align-items: center;
+}
+
+.modal-content {
+	padding: 5px 20px;
+    background-color: #fbb03b;
+	color: #fff;
+}
+
+.modal-body {
+	padding: 5px 0;
+}
+.modal-icons {
+	height: 35px;
+	width: 100%;
+}
+
+.logo {
+	padding: 16px;
+}
+
+.logo-icon {
+	vertical-align: text-bottom;
+	margin-right: 12px;
+}
+
+.version {
+	color: #444;
+	font-size: 18px;
+}
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.flex {
+	opacity: 1;
+	transition: opacity 0.2s ease;
+	justify-content: center;
+}
+
+.flex:hover {
+	opacity: 0.4;
+}
+
+.flex .fa {
+	font-size: 30px;
+	color: #fbb03b;
+}
+.chrome_action {
+	cursor: pointer;
+}
+.display-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.display-grid[data-col="3"] {
+  grid-template-columns: auto auto auto;	
+}
+.form_control {
+    border-radius: 3px;
+    border: 1px solid #cbd6e2;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 12px;
+    transition: all .15s ease-out;
+    background-color: #f5f8fa;
+    color: #33475b;
+    display: block;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+select.form_control {
+	height: 28px;
+	width: 170px;
+}
+select.form_control option{
+	padding: 3px;
+}
+input#widger_color{	
+	width: 70px;
+}
+.form_button {
+    padding: 9px 12px;
+    border-radius: 3px;
+    border: 1px solid #cbd6e2;
+    font-size: 13px;
+    transition: all .15s ease-out;
+    background-color: #fbb03b;
+    color: #33475b;
+    display: block;
+    height: 40px;
+    line-height: 22px;
+    text-align: left;
+    vertical-align: middle;
+}
+.cstoragenotification {
+    padding: 5px 0;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    margin-bottom: 2px;
+    font-size: 12px;
+    min-height: 24px
+}
+.cstoragenotification .cstoragemessage{
+    padding: 5px;
+    background-color: #f44336;
+}
+.cstoragenotification .cstoragemessage.info{
+    padding: 5px;
+    background-color: #2196f37d;
+    color: #33475b;
+}
+.cstoragenotification .cstoragemessage.info p{
+	margin: 0;
+}
+
+.private-button {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .15s ease-out;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.private-button--secondary {
+    background-color: #fff;
+    border-color: #ff7a59;
+    color: #ff7a53;
+}
+.private-button--xs {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 12px;
+}
+.private-button--primary {
+    background-color: #ff7a59;
+    border-color: #ff7a59;
+    color: #fff;
+}
+
+button.stage{
+    display: block;
+    height: 40px;
+    background: none;
+    border: 1px solid #fbb03b;
+    width: 55px;
+    text-align: center;
+    border-radius: 5px;
+}	
+
+.dot-flashing {
+	position: relative;
+	width: 8px;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #9880ff;
+	color: #9880ff;
+	animation: dotFlashing 1s infinite linear alternate;
+	animation-delay: .5s;
+    margin: 0 auto;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+}
+
+.dot-flashing::before {
+	left: -12px;
+	width: 8px;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #fbb03b;
+	color: #fbb03b;
+	animation: dotFlashing 1s infinite alternate;
+	animation-delay: 0s;
+}
+
+.dot-flashing::after {
+	left: 12px;
+	width: 8px;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #fbb03b;
+	color: #fbb03b;
+	animation: dotFlashing 1s infinite alternate;
+  	animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #fbb03b;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}

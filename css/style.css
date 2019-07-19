@@ -1,0 +1,33 @@
+body .hubrise {
+	margin-top: 5px;
+}
+body .hubrise button{
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 !important;
+	border: 1px solid #cbd6e2;
+}
+body .hubrise input{
+	display: inline-block;
+	width: 50px;
+    padding: 3px;
+    height: 30px;	
+    font-size: 11px;
+    cursor: pointer;
+}
+.widget.widget-unmark::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: #eaf0f6!important; */
+    background-color: rgba(234, 240, 246, 0.80);    
+    border-color: #eaf0f6!important;
+    cursor: not-allowed;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.widget.widget-unmark .widget-icon__mask {
+	opacity: .5;
+}

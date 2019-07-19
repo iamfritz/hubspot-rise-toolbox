@@ -1,0 +1,20 @@
+
+.hubrise .hubrise-button.private-button {
+    display: inline-block;
+}
+
+.hubrise .rise-icon {
+    font-size: 1rem;
+	height: 24px;
+	width: 24px;
+    line-height: 0.75rem;
+    float: right;
+    display: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(203, 214, 226);
+    border-image: initial;
+    padding: 0.5625rem 1rem;
+    border-radius: 0.1875rem;
+    background: url('images/icon.png') center center / 20px no-repeat rgb(255, 255, 255) !important;
+}
